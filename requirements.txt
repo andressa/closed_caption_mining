@@ -1,0 +1,5 @@
+Django==1.4
+South==0.7.5
+docutils==0.9.1
+fabric==1.4
+django-extensions
