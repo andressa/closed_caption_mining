@@ -5,6 +5,8 @@ import os
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
+PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__))
+
 ADMINS = (
     ('Andressa Sivolella', 'asivolella@poli.ufrj.br'),
 	('Luiz Fernando de Frias', 'l.frias@poli.ufrj.br'),
@@ -112,6 +114,7 @@ TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
+    os.path.join(PROJECT_ROOT, "templates"),
 )
 
 INSTALLED_APPS = (
@@ -123,8 +126,8 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'django.contrib.admin',
     'django.contrib.admindocs',
-    'django_extensions',
-    'south',
+    #'django_extensions',
+    #'south',
     'cc_mining',
 )
 
